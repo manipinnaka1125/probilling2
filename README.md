@@ -68,6 +68,12 @@ in the project go to DBUtil.java change the password according to your workbench
 
 for changing the admin dashboard username and password go to project ->servlets->adminservlets change the username and password according to your convinience 
 
+for default we have given as admin,admin as username and password
+
+first register and check the database is the data is adding properly or not 
+
+after go to admin and here we can update the bills according to the id 
+
 
 
 
