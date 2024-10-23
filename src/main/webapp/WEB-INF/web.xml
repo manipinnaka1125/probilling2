@@ -1,0 +1,64 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Electricity Billing System</display-name>
+
+    <!-- Existing Servlets -->
+    <servlet>
+        <servlet-name>AdminUpdateBillsServlet</servlet-name>
+        <servlet-class>com.example.servlets.AdminUpdateBillsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminUpdateBillsServlet</servlet-name>
+        <url-pattern>/adminUpdateBills</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.example.servlets.UserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>com.example.servlets.UpdateProfileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/updateProfile</url-pattern>
+    </servlet-mapping>
+
+    <!-- Additional Servlets -->
+    <servlet>
+        <servlet-name>PaymentHistoryServlet</servlet-name>
+        <servlet-class>com.example.servlets.PaymentHistoryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PaymentHistoryServlet</servlet-name>
+        <url-pattern>/paymentHistory</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RecentBillsServlet</servlet-name>
+        <servlet-class>com.example.servlets.RecentBillsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RecentBillsServlet</servlet-name>
+        <url-pattern>/recentBills</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
